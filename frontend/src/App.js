@@ -1,10 +1,23 @@
+import { Container } from 'react-bootstrap';
 import './App.css';
+import Header from './componenets/header';
+
+import Footer from './componenets/footer';
+import HomeScreen from './screens/homeScreen';
 
 const App = () => {
   return (
-    <div className="App">
-     <h1>Wellcom to ProShop V2</h1>
-    </div>
+    
+    <>
+     <Header />
+     <main className='py-3'>
+      <Container  >
+         <HomeScreen />
+        
+      </Container>
+     </main>
+     <Footer />
+    </>
   );
 }
 
